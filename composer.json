@@ -1,0 +1,44 @@
+{
+  "name": "exts/axl-openai",
+  "description": "axl-openai",
+  "type": "library",
+  "version": "1.0.0-alpha.0",
+  "keywords": [
+    "ai bridge",
+    "ai platform bridge",
+    "exts ai",
+    "exts axl",
+    "exts axl core",
+    "exts axl core ai",
+    "exts axl core ai bridge"
+  ],
+  "authors": [
+    {
+      "name": "Lamonte H."
+    }
+  ],
+  "require": {
+    "php": ">=8.3",
+    "exts/axl-core": "^1.0.0-alpha.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.0",
+    "symfony/dotenv": "v7.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AxlCore\\": "Source/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AxlCore\\Tests\\": "Tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
