@@ -7,6 +7,6 @@ class OpenAiResponsesTextResponseObject extends TextResponseObject
 {
     public function text() : ?string
     {
-        return $this->rawJsonArray()['output'][1]['content'][0]['text'] ?? null;
+        return $this->rawJsonArray()['output'][0]['content'][0]['text'] ?? null;
     }
 }
